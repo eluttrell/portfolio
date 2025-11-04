@@ -3,7 +3,10 @@ import ReactMarkdown from 'react-markdown';
 
 export default async function Home() {
     const data = await getContentData();
-    const { profile, skills, projects } = data;
+    const { profile, skills, projects, navigation } = data;
+
+    // Find the resume link from navigation
+    const resumeLink = navigation.find(link => link.label === 'Resume');
 
     const markdownComponents = {
         p: ({node, ...props}: any) => (
@@ -34,14 +37,16 @@ export default async function Home() {
                             View My Projects
                         </a>
                     )}
-                    <a
-                      href="/Resume 2025.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-3 text-lg font-semibold rounded-lg shadow-md transition duration-300 border-2 border-brand-secondary text-brand-secondary hover:bg-brand-secondary/10 hover:text-brand-primary dark:hover:bg-brand-secondary/10"
-                    >
-                      View Resume
-                    </a>
+                    {resumeLink && (
+                        <a
+                          href={resumeLink.href}
+                          target={resumeLink.external ? "_blank" : "_self"}
+                          rel={resumeLink.external ? "noopener noreferrer" : undefined}
+                          className="px-6 py-3 text-lg font-semibold rounded-lg shadow-md transition duration-300 border-2 border-brand-secondary text-brand-secondary hover:bg-brand-secondary/10 hover:text-brand-primary dark:hover:bg-brand-secondary/10"
+                        >
+                          View Resume
+                        </a>
+                    )}
                 </div>
             </section>
 
