@@ -1,0 +1,66 @@
+{
+    "profile": {
+        "name": "Elijah Allstrom-Luttrell",
+        "title": "Software Engineer",
+        "contactEmail": "elijah.luttrell@protonmail.com",
+        "bio_markdown": "**Building elegant and scalable software solutions**\n\nI focus on creating robust, high-performance web applications from front-end user experience to back-end architecture.\n\nCurrently seeking new opportunities in **Full-Stack Development**. Let's connect!"
+    },
+    "skills": [
+        "TypeScript",
+        "React/Next.js",
+        "Tailwind CSS",
+        "Node.js / Express",
+        "PostgreSQL",
+        "Java",
+        "Spring Boot",
+        "AWS",
+        "CI/CD / Jenkins"
+    ],
+    "projects": [
+        
+    ],
+    "footerLinks": [
+        {
+            "label": "Resume",
+            "href": "/Resume 2025.pdf",
+            "external": true
+        },
+        {
+            "label": "GitHub",
+            "href": "https://github.com/eluttrell",
+            "external": true
+        },
+        {
+            "label": "GitLab",
+            "href": "https://gitlab.com/ealltrell",
+            "external": true
+        },
+        {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/alltrell/",
+            "external": true
+        },
+        {
+            "label": "Contact",
+            "href": "/contact",
+            "external": false
+        }
+    ],
+    "navigation": [
+        {
+            "label": "Projects",
+            "href": "/projects",
+            "external": false
+        },
+        {
+            "label": "Resume",
+            "href": "/Resume 2025.pdf",
+            "external": true
+        },
+        {
+            "label": "Contact",
+            "href": "/contact",
+            "external": false
+        }
+    ]
+}

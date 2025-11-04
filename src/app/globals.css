@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* ---------------------------------- */
+/* Dynamic Color Variables */
+/* ---------------------------------- */
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #1E293B;
+  --color-primary: 37 99 235; 
+  --color-secondary: 20 184 166;
+}
+
+.dark {
+  --background: #0B1727; 
+  --foreground: #E2E8F0;
+  --color-primary: 96 165 250;
+  --color-secondary: 45 212 191;
+}
+
+@theme {
+  --color-brand-primary: rgb(var(--color-primary)); 
+  --color-brand-secondary: rgb(var(--color-secondary));
+}
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

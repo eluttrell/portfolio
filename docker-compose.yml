@@ -1,0 +1,20 @@
+services:
+  portfolio:
+    # Build using the Dockerfile in the current directory (root)
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    container_name: portfolio_site
+    # Ensure the container automatically restarts if it crashes
+    restart: always
+    
+    # Map host port 80 to container port 80
+    ports:
+      - "8080:80"
+      
+    # CRITICAL: Mounts the content.json file from the host root into the 
+    # exact internal path the Nginx configuration expects (/etc/nginx/content/).
+    # ':ro' makes the volume Read-Only inside the container.
+    volumes:
+      - ./content.json:/etc/nginx/content/content.json:ro
