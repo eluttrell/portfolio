@@ -15,8 +15,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elijah Luttrell",
-  description: "Software Engineer",
+  title: {
+    default: "Elijah Luttrell | Software Engineer",
+    template: "%s | Elijah Luttrell",
+  },
+  description: "Full-stack software engineer specializing in TypeScript, React/Next.js, and scalable web applications. Building elegant solutions with modern technologies.",
+  keywords: ["Software Engineer", "Full-Stack Developer", "TypeScript", "React", "Next.js", "Web Development"],
+  authors: [{ name: "Elijah Luttrell" }],
+  creator: "Elijah Luttrell",
+  metadataBase: new URL("https://elijah.luttrell.dev"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://elijah.luttrell.dev",
+    title: "Elijah Luttrell | Software Engineer",
+    description: "Full-stack software engineer specializing in TypeScript, React/Next.js, and scalable web applications.",
+    siteName: "Elijah Luttrell Portfolio",
+  },
+  twitter: {
+    card: "summary",
+    title: "Elijah Luttrell | Software Engineer",
+    description: "Full-stack software engineer specializing in TypeScript, React/Next.js, and scalable web applications.",
+  },
 };
 
 export default function RootLayout({

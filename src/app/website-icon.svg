@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#gradient)"/>
+  
+  <!-- Code brackets with modern styling -->
+  <g fill="white" opacity="0.95">
+    <!-- Left bracket -->
+    <path d="M 180 160 L 140 160 Q 120 160 120 180 L 120 332 Q 120 352 140 352 L 180 352" 
+          stroke="white" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right bracket -->
+    <path d="M 332 160 L 372 160 Q 392 160 392 180 L 392 332 Q 392 352 372 352 L 332 352" 
+          stroke="white" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Forward slash in the middle -->
+    <line x1="280" y1="180" x2="232" y2="332" 
+          stroke="white" stroke-width="24" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Subtle accent dots for visual interest -->
+  <circle cx="256" cy="140" r="8" fill="white" opacity="0.6"/>
+  <circle cx="256" cy="372" r="8" fill="white" opacity="0.6"/>
+</svg>
